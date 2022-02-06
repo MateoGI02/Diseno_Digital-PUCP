@@ -1,0 +1,439 @@
+Analysis & Synthesis report for control_basket
+Mon Dec 07 19:04:01 2020
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |control_basket|fsm:maquina_estado|estado_presente
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Port Connectivity Checks: "reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos"
+ 13. Port Connectivity Checks: "reloj_p:contad_control_p|counter_mod_seg:contador_segundos"
+ 14. Port Connectivity Checks: "reloj_p:contad_control_p|counter_mod_min:contador_minutos"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 07 19:04:01 2020       ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; control_basket                              ;
+; Top-level Entity Name              ; control_basket                              ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 151                                         ;
+;     Total combinational functions  ; 151                                         ;
+;     Dedicated logic registers      ; 32                                          ;
+; Total registers                    ; 32                                          ;
+; Total pins                         ; 51                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                                      ; control_basket     ; control_basket     ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
+; counter_mod_min.vhd              ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_min.vhd     ;         ;
+; counter_mod_seg.vhd              ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg.vhd     ;         ;
+; counter_mod_seg_lan.vhd          ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg_lan.vhd ;         ;
+; divisor_freq.vhd                 ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/divisor_freq.vhd        ;         ;
+; reloj_p.vhd                      ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd             ;         ;
+; reloj_l.vhd                      ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/reloj_l.vhd             ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/fsm.vhd                 ;         ;
+; my_components.vhd                ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/my_components.vhd       ;         ;
+; control_basket.vhd               ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd      ;         ;
+; contador_periodos.vhd            ; yes             ; User VHDL File  ; C:/temp/1IEE04/H4413/LAB10a/EX/contador_periodos.vhd   ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 151         ;
+;                                             ;             ;
+; Total combinational functions               ; 151         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 81          ;
+;     -- 3 input functions                    ; 37          ;
+;     -- <=2 input functions                  ; 33          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 137         ;
+;     -- arithmetic mode                      ; 14          ;
+;                                             ;             ;
+; Total registers                             ; 32          ;
+;     -- Dedicated logic registers            ; 32          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 51          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 32          ;
+; Total fan-out                               ; 709         ;
+; Average fan-out                             ; 2.49        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                            ; Library Name ;
++-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+--------------+
+; |control_basket                               ; 151 (1)           ; 32 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 51   ; 0            ; 0          ; |control_basket                                                                ; work         ;
+;    |contador_periodos:cuenta_periodo|         ; 5 (5)             ; 4 (4)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|contador_periodos:cuenta_periodo                               ; work         ;
+;    |divisor_freq:divisor_frecqu|              ; 5 (5)             ; 5 (5)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|divisor_freq:divisor_frecqu                                    ; work         ;
+;    |fsm:maquina_estado|                       ; 21 (21)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|fsm:maquina_estado                                             ; work         ;
+;    |reloj_l:contad_control_l|                 ; 46 (2)            ; 6 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|reloj_l:contad_control_l                                       ; work         ;
+;       |counter_mod_seg_lan:contador_segundos| ; 44 (44)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos ; work         ;
+;    |reloj_p:contad_control_p|                 ; 73 (5)            ; 11 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|reloj_p:contad_control_p                                       ; work         ;
+;       |counter_mod_min:contador_minutos|      ; 28 (28)           ; 5 (5)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|reloj_p:contad_control_p|counter_mod_min:contador_minutos      ; work         ;
+;       |counter_mod_seg:contador_segundos|     ; 40 (40)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |control_basket|reloj_p:contad_control_p|counter_mod_seg:contador_segundos     ; work         ;
++-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |control_basket|fsm:maquina_estado|estado_presente                                                                                                                                                                                         ;
++---------------------------------------------+--------------------------------+---------------------------------------------+-----------------------------+------------------------------+-----------------------------------------+------------------------+
+; Name                                        ; estado_presente.avanza_periodo ; estado_presente.pausa_cuenta_per_reinic_lan ; estado_presente.pausa_ambos ; estado_presente.cuenta_ambos ; estado_presente.cuenta_partido_no_lanzm ; estado_presente.basico ;
++---------------------------------------------+--------------------------------+---------------------------------------------+-----------------------------+------------------------------+-----------------------------------------+------------------------+
+; estado_presente.basico                      ; 0                              ; 0                                           ; 0                           ; 0                            ; 0                                       ; 0                      ;
+; estado_presente.cuenta_partido_no_lanzm     ; 0                              ; 0                                           ; 0                           ; 0                            ; 1                                       ; 1                      ;
+; estado_presente.cuenta_ambos                ; 0                              ; 0                                           ; 0                           ; 1                            ; 0                                       ; 1                      ;
+; estado_presente.pausa_ambos                 ; 0                              ; 0                                           ; 1                           ; 0                            ; 0                                       ; 1                      ;
+; estado_presente.pausa_cuenta_per_reinic_lan ; 0                              ; 1                                           ; 0                           ; 0                            ; 0                                       ; 1                      ;
+; estado_presente.avanza_periodo              ; 1                              ; 0                                           ; 0                           ; 0                            ; 0                                       ; 1                      ;
++---------------------------------------------+--------------------------------+---------------------------------------------+-----------------------------+------------------------------+-----------------------------------------+------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                           ;
++----------------------------------------------------------+---------------------------------------------------+
+; Register name                                            ; Reason for Removal                                ;
++----------------------------------------------------------+---------------------------------------------------+
+; fsm:maquina_estado|divisor_freq:DivisorFrec|clk_o_reg    ; Merged with divisor_freq:divisor_frecqu|clk_o_reg ;
+; reloj_l:contad_control_l|divisor_freq:div_frec|clk_o_reg ; Merged with divisor_freq:divisor_frecqu|clk_o_reg ;
+; reloj_p:contad_control_p|divisor_freq:div_frec|clk_o_reg ; Merged with divisor_freq:divisor_frecqu|clk_o_reg ;
+; fsm:maquina_estado|divisor_freq:DivisorFrec|q_reg[3]     ; Merged with divisor_freq:divisor_frecqu|q_reg[3]  ;
+; reloj_l:contad_control_l|divisor_freq:div_frec|q_reg[3]  ; Merged with divisor_freq:divisor_frecqu|q_reg[3]  ;
+; reloj_p:contad_control_p|divisor_freq:div_frec|q_reg[3]  ; Merged with divisor_freq:divisor_frecqu|q_reg[3]  ;
+; fsm:maquina_estado|divisor_freq:DivisorFrec|q_reg[2]     ; Merged with divisor_freq:divisor_frecqu|q_reg[2]  ;
+; reloj_l:contad_control_l|divisor_freq:div_frec|q_reg[2]  ; Merged with divisor_freq:divisor_frecqu|q_reg[2]  ;
+; reloj_p:contad_control_p|divisor_freq:div_frec|q_reg[2]  ; Merged with divisor_freq:divisor_frecqu|q_reg[2]  ;
+; fsm:maquina_estado|divisor_freq:DivisorFrec|q_reg[1]     ; Merged with divisor_freq:divisor_frecqu|q_reg[1]  ;
+; reloj_l:contad_control_l|divisor_freq:div_frec|q_reg[1]  ; Merged with divisor_freq:divisor_frecqu|q_reg[1]  ;
+; reloj_p:contad_control_p|divisor_freq:div_frec|q_reg[1]  ; Merged with divisor_freq:divisor_frecqu|q_reg[1]  ;
+; fsm:maquina_estado|divisor_freq:DivisorFrec|q_reg[0]     ; Merged with divisor_freq:divisor_frecqu|q_reg[0]  ;
+; reloj_l:contad_control_l|divisor_freq:div_frec|q_reg[0]  ; Merged with divisor_freq:divisor_frecqu|q_reg[0]  ;
+; reloj_p:contad_control_p|divisor_freq:div_frec|q_reg[0]  ; Merged with divisor_freq:divisor_frecqu|q_reg[0]  ;
+; Total Number of Removed Registers = 15                   ;                                                   ;
++----------------------------------------------------------+---------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                  ;
++---------------------------------------------------------------------+---------+
+; Inverted Register                                                   ; Fan out ;
++---------------------------------------------------------------------+---------+
+; reloj_p:contad_control_p|counter_mod_min:contador_minutos|q[2]      ; 12      ;
+; reloj_p:contad_control_p|counter_mod_min:contador_minutos|q[3]      ; 12      ;
+; reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos|q[3] ; 15      ;
+; reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos|q[4] ; 13      ;
+; contador_periodos:cuenta_periodo|q[0]                               ; 5       ;
+; Total number of inverted registers = 5                              ;         ;
++---------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos"                                         ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                     ; Type   ; Severity ; Details                                                                             ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; visualizador_q_segundos2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reloj_p:contad_control_p|counter_mod_seg:contador_segundos"                                            ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; visualizador_q_segundos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reloj_p:contad_control_p|counter_mod_min:contador_minutos"                                            ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                             ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; visualizador_q_minutos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 51                          ;
+; cycloneiii_ff         ; 32                          ;
+;     CLR               ; 7                           ;
+;     ENA CLR           ; 25                          ;
+; cycloneiii_lcell_comb ; 159                         ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 14                          ;
+;     normal            ; 145                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 81                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.88                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Mon Dec 07 19:03:51 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off control_basket -c control_basket
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_min.vhd
+    Info (12022): Found design unit 1: counter_mod_min-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_min.vhd Line: 17
+    Info (12023): Found entity 1: counter_mod_min File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_min.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_seg.vhd
+    Info (12022): Found design unit 1: counter_mod_seg-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg.vhd Line: 17
+    Info (12023): Found entity 1: counter_mod_seg File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_seg_lan.vhd
+    Info (12022): Found design unit 1: counter_mod_seg_lan-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg_lan.vhd Line: 15
+    Info (12023): Found entity 1: counter_mod_seg_lan File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg_lan.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file divisor_freq.vhd
+    Info (12022): Found design unit 1: divisor_freq-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/divisor_freq.vhd Line: 11
+    Info (12023): Found entity 1: divisor_freq File: C:/temp/1IEE04/H4413/LAB10a/EX/divisor_freq.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file reloj_p.vhd
+    Info (12022): Found design unit 1: reloj_p-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 21
+    Info (12023): Found entity 1: reloj_p File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file reloj_l.vhd
+    Info (12022): Found design unit 1: reloj_l-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_l.vhd Line: 18
+    Info (12023): Found entity 1: reloj_l File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_l.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: fsm-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/fsm.vhd Line: 22
+    Info (12023): Found entity 1: fsm File: C:/temp/1IEE04/H4413/LAB10a/EX/fsm.vhd Line: 6
+Info (12021): Found 1 design units, including 0 entities, in source file my_components.vhd
+    Info (12022): Found design unit 1: my_components File: C:/temp/1IEE04/H4413/LAB10a/EX/my_components.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file control_basket.vhd
+    Info (12022): Found design unit 1: control_basket-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 21
+    Info (12023): Found entity 1: control_basket File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file contador_periodos.vhd
+    Info (12022): Found design unit 1: contador_periodos-structural File: C:/temp/1IEE04/H4413/LAB10a/EX/contador_periodos.vhd Line: 12
+    Info (12023): Found entity 1: contador_periodos File: C:/temp/1IEE04/H4413/LAB10a/EX/contador_periodos.vhd Line: 5
+Info (12127): Elaborating entity "control_basket" for the top level hierarchy
+Info (12128): Elaborating entity "reloj_p" for hierarchy "reloj_p:contad_control_p" File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 35
+Warning (10036): Verilog HDL or VHDL warning at reloj_p.vhd(23): object "visualizador_q_minutos" assigned a value but never read File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at reloj_p.vhd(24): object "visualizador_q_segundos" assigned a value but never read File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 24
+Info (12128): Elaborating entity "counter_mod_min" for hierarchy "reloj_p:contad_control_p|counter_mod_min:contador_minutos" File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 34
+Info (12128): Elaborating entity "counter_mod_seg" for hierarchy "reloj_p:contad_control_p|counter_mod_seg:contador_segundos" File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 36
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj_p:contad_control_p|divisor_freq:div_frec" File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_p.vhd Line: 38
+Info (12128): Elaborating entity "reloj_l" for hierarchy "reloj_l:contad_control_l" File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 38
+Warning (10036): Verilog HDL or VHDL warning at reloj_l.vhd(24): object "visualizador_q_segundos2" assigned a value but never read File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_l.vhd Line: 24
+Info (12128): Elaborating entity "counter_mod_seg_lan" for hierarchy "reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos" File: C:/temp/1IEE04/H4413/LAB10a/EX/reloj_l.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at counter_mod_seg_lan.vhd(25): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/temp/1IEE04/H4413/LAB10a/EX/counter_mod_seg_lan.vhd Line: 25
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:maquina_estado" File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 40
+Info (12128): Elaborating entity "contador_periodos" for hierarchy "contador_periodos:cuenta_periodo" File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 42
+Info (13000): Registers with preset signals will power-up high File: C:/temp/1IEE04/H4413/LAB10a/EX/contador_periodos.vhd Line: 17
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "dpmin_dec[1]" is stuck at GND File: C:/temp/1IEE04/H4413/LAB10a/EX/control_basket.vhd Line: 11
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 202 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 46 output pins
+    Info (21061): Implemented 151 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4975 megabytes
+    Info: Processing ended: Mon Dec 07 19:04:01 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
+
+

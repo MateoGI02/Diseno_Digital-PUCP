@@ -1,0 +1,8 @@
+
+State Machine - |fsm|estado_presente
+Name estado_presente.E estado_presente.D estado_presente.C estado_presente.B estado_presente.A 
+estado_presente.A 0 0 0 0 0 
+estado_presente.B 0 0 0 1 1 
+estado_presente.C 0 0 1 0 1 
+estado_presente.D 0 1 0 0 1 
+estado_presente.E 1 0 0 0 1 

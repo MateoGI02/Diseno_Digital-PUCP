@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsm is
+port( reset_n, clk, ini_pausa_per, ini_pausa_lan, borrar_lan, min_value_p,min_value_l : in std_logic;
+      ini_pausa_l,ini_pausa_p, borrar_p, borrar_l : out std_logic);
+end fsm;
+architecture estructura of fsm is
+type estado is (A,B,C,D,E);
+SIGNAL estado_presente, estado_siguiente : estado;
+begin
+--registro de estado
+			process(clk,)

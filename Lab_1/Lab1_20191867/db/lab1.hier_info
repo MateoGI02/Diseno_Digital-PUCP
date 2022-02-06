@@ -1,0 +1,17 @@
+|lab1
+Cin => Cout.IN0
+Cin => Cout.IN0
+Cin => S.IN1
+Cin => S.IN1
+A => W.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => W.IN0
+B => W.IN1
+B => Cout.IN1
+B => Cout.IN1
+B => W.IN1
+Cout << Cout.DB_MAX_OUTPUT_PORT_TYPE
+S << S.DB_MAX_OUTPUT_PORT_TYPE
+
+

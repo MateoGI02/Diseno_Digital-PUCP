@@ -1,0 +1,10 @@
+|circuitoex1
+a => f.IN0
+a => f.IN0
+b => f.IN1
+c => f.IN1
+c => g.DATAIN
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+

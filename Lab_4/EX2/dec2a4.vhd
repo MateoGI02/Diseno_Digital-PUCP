@@ -1,0 +1,20 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY dec2a4 is 
+	PORT (W : IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+			EN: IN  STD_LOGIC;
+	      Y : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END dec2a4;
+
+ARCHITECTURE logic4 OF dec2a4 IS
+ SIGNAL Q : STD_LOGIC_VECTOR(2 DOWNTO 0);
+BEGIN
+	Q<=EN&W;
+	Y<="0001" WHEN Q="100" ELSE
+	   "0010" WHEN Q="101" ELSE
+	   "0100" WHEN Q="110" ELSE	
+	   "1000" WHEN Q="111" ELSE
+		"0000";	
+END logic4;
+			

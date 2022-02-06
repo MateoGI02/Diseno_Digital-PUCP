@@ -1,0 +1,267 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/LAB04/EX2/simulation/modelsim
+Ecod4a2
+Z1 w1602520691
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../cod4a2.vhd
+Z5 F../../cod4a2.vhd
+l0
+L4
+V`nL`moF@R<?lOjidmKYba2
+!s100 PSoRmdP]Kk0_j3iKL@gXI0
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1602551727
+!i10b 1
+Z8 !s108 1602551727.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../../cod4a2.vhd|
+Z10 !s107 ../../cod4a2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Alogic3
+R2
+R3
+DEx4 work 6 cod4a2 0 22 `nL`moF@R<?lOjidmKYba2
+l10
+L9
+V@eW8Ed>>[U0oi81DjIJIf3
+!s100 Ujj<Gf]:3]F1f;@[XlTi>1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edec2a4
+Z13 w1602520812
+R2
+R3
+R0
+Z14 8../../dec2a4.vhd
+Z15 F../../dec2a4.vhd
+l0
+L4
+VSJQVYVlnBGAld@M@kLmXe1
+!s100 N=aTnRVF0R5g?7kB4U;TI3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|../../dec2a4.vhd|
+Z17 !s107 ../../dec2a4.vhd|
+!i113 1
+R11
+R12
+Alogic4
+R2
+R3
+DEx4 work 6 dec2a4 0 22 SJQVYVlnBGAld@M@kLmXe1
+l12
+L10
+VLD2_T9T<:HeO:7=?ZcWVn3
+!s100 MF@AX;o<cCdQ:3;]=miD32
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Edemux1a4
+Z18 w1602523598
+R2
+R3
+R0
+Z19 8../../demux1a4.vhd
+Z20 F../../demux1a4.vhd
+l0
+L4
+V3WNY=46lb0gFfAe]B5=WP1
+!s100 ;mHlioXD7266OofkR;_5]3
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|../../demux1a4.vhd|
+Z22 !s107 ../../demux1a4.vhd|
+!i113 1
+R11
+R12
+Alogic1
+R2
+R3
+DEx4 work 8 demux1a4 0 22 3WNY=46lb0gFfAe]B5=WP1
+l11
+L10
+V9IWj@JN:Q81i;zIfhJZ4c3
+!s100 eDBUcN49m:^A<=:OmdkTR1
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Emux4a1
+Z23 w1602523484
+R2
+R3
+R0
+Z24 8../../mux4a1.vhd
+Z25 F../../mux4a1.vhd
+l0
+L4
+VTkWg^n9a2Yz8_E?F:zk=41
+!s100 dPVcG6B]cn6Y3@DKJ3FWZ2
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|../../mux4a1.vhd|
+Z27 !s107 ../../mux4a1.vhd|
+!i113 1
+R11
+R12
+Alogic2
+R2
+R3
+DEx4 work 6 mux4a1 0 22 TkWg^n9a2Yz8_E?F:zk=41
+l11
+L10
+VLLnc5moCI7z:E8P>3n47z1
+!s100 0OboF7zee4RBDc6ZW;R^z2
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Emuxtdm
+Z28 w1602492153
+Z29 DPx4 work 11 my_circuits 0 22 YoI<n[cA4<V5SELD@=82E1
+R2
+R3
+R0
+Z30 8../../muxtdm.vhd
+Z31 F../../muxtdm.vhd
+l0
+L5
+VGT:<HDYoLkXk=l?`;dPh=1
+!s100 _=ZHOQlP2kQcifXJA5Jia3
+R6
+31
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|../../muxtdm.vhd|
+Z33 !s107 ../../muxtdm.vhd|
+!i113 1
+R11
+R12
+Alogic
+R29
+R2
+R3
+DEx4 work 6 muxtdm 0 22 GT:<HDYoLkXk=l?`;dPh=1
+l16
+L12
+VDAbXE_J]Jnib`Tfbn3f241
+!s100 dVZ8PjGo;0KoTiL[oWbTn3
+R6
+31
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Emuxtdm_vhd_tst
+Z34 w1602523051
+R2
+R3
+R0
+Z35 8muxtdm.vht
+Z36 Fmuxtdm.vht
+l0
+L31
+VoO<>L0o6I2F@WE4WUC2dP0
+!s100 RIWLTTjDLiYcl4OneTzV31
+R6
+31
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-93|-work|work|muxtdm.vht|
+Z38 !s107 muxtdm.vht|
+!i113 1
+R11
+R12
+Amuxtdm_arch
+R2
+R3
+DEx4 work 14 muxtdm_vhd_tst 0 22 oO<>L0o6I2F@WE4WUC2dP0
+l60
+L33
+VTA2AIaJGmYKE9D26QWFLY0
+!s100 9;naD@1H^hMONF09WCh0i1
+R6
+31
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Pmy_circuits
+R2
+R3
+w1602491590
+R0
+8../../my_circuits.vhd
+F../../my_circuits.vhd
+l0
+L4
+VYoI<n[cA4<V5SELD@=82E1
+!s100 FLMVfkL7;5D90TL@P0T7H3
+R6
+31
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-93|-work|work|../../my_circuits.vhd|
+!s107 ../../my_circuits.vhd|
+!i113 1
+R11
+R12

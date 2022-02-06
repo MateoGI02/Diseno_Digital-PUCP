@@ -1,0 +1,16 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use work.my_components.all;
+
+Entity reloj is
+	Port(
+		);
+End reloj
+
+Architecture logica of reloj is
+	signal 
+Begin
+	contadorseg:;
+	contadormin:;
+	divisorfre:;
+End logica;

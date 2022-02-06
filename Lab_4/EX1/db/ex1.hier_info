@@ -1,0 +1,100 @@
+|ex1
+A => EN2.IN0
+A => EN1.IN0
+B => dec3a8:dec1.W[2]
+B => dec3a8:dec2.W[2]
+C => dec3a8:dec1.W[1]
+C => dec3a8:dec2.W[1]
+D => dec3a8:dec1.W[0]
+D => dec3a8:dec2.W[0]
+EN => EN1.IN1
+EN => EN2.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1|dec3a8:dec1
+EN => Equal0.IN0
+EN => Equal1.IN1
+EN => Equal2.IN1
+EN => Equal3.IN2
+EN => Equal4.IN1
+EN => Equal5.IN2
+EN => Equal6.IN2
+EN => Equal7.IN3
+W[0] => Equal0.IN3
+W[0] => Equal1.IN0
+W[0] => Equal2.IN3
+W[0] => Equal3.IN1
+W[0] => Equal4.IN3
+W[0] => Equal5.IN1
+W[0] => Equal6.IN3
+W[0] => Equal7.IN2
+W[1] => Equal0.IN2
+W[1] => Equal1.IN3
+W[1] => Equal2.IN0
+W[1] => Equal3.IN0
+W[1] => Equal4.IN2
+W[1] => Equal5.IN3
+W[1] => Equal6.IN1
+W[1] => Equal7.IN1
+W[2] => Equal0.IN1
+W[2] => Equal1.IN2
+W[2] => Equal2.IN2
+W[2] => Equal3.IN3
+W[2] => Equal4.IN0
+W[2] => Equal5.IN0
+W[2] => Equal6.IN0
+W[2] => Equal7.IN0
+Y[0] <= Equal7.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex1|dec3a8:dec2
+EN => Equal0.IN0
+EN => Equal1.IN1
+EN => Equal2.IN1
+EN => Equal3.IN2
+EN => Equal4.IN1
+EN => Equal5.IN2
+EN => Equal6.IN2
+EN => Equal7.IN3
+W[0] => Equal0.IN3
+W[0] => Equal1.IN0
+W[0] => Equal2.IN3
+W[0] => Equal3.IN1
+W[0] => Equal4.IN3
+W[0] => Equal5.IN1
+W[0] => Equal6.IN3
+W[0] => Equal7.IN2
+W[1] => Equal0.IN2
+W[1] => Equal1.IN3
+W[1] => Equal2.IN0
+W[1] => Equal3.IN0
+W[1] => Equal4.IN2
+W[1] => Equal5.IN3
+W[1] => Equal6.IN1
+W[1] => Equal7.IN1
+W[2] => Equal0.IN1
+W[2] => Equal1.IN2
+W[2] => Equal2.IN2
+W[2] => Equal3.IN3
+W[2] => Equal4.IN0
+W[2] => Equal5.IN0
+W[2] => Equal6.IN0
+W[2] => Equal7.IN0
+Y[0] <= Equal7.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

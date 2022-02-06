@@ -1,0 +1,9 @@
+
+State Machine - |control_basket|fsm:maquina_estado|estado_presente
+Name estado_presente.avanza_periodo estado_presente.pausa_cuenta_per_reinic_lan estado_presente.pausa_ambos estado_presente.cuenta_ambos estado_presente.cuenta_partido_no_lanzm estado_presente.basico 
+estado_presente.basico 0 0 0 0 0 0 
+estado_presente.cuenta_partido_no_lanzm 0 0 0 0 1 1 
+estado_presente.cuenta_ambos 0 0 0 1 0 1 
+estado_presente.pausa_ambos 0 0 1 0 0 1 
+estado_presente.pausa_cuenta_per_reinic_lan 0 1 0 0 0 1 
+estado_presente.avanza_periodo 1 0 0 0 0 1 

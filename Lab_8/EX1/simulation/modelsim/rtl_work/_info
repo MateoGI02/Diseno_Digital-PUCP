@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Downloads/LAB08/EX1/simulation/modelsim
+Ecounter_mod_min
+Z1 w1606181106
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8../../counter_mod_min.vhd
+Z6 F../../counter_mod_min.vhd
+l0
+L5
+VSbT6^=@e_MN6ZS22U9_7L3
+!s100 XG:;bGkUCZonRzGZjhcU10
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1606182057
+!i10b 1
+Z9 !s108 1606182057.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../counter_mod_min.vhd|
+Z11 !s107 ../../counter_mod_min.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Alogic
+R2
+R3
+R4
+DEx4 work 15 counter_mod_min 0 22 SbT6^=@e_MN6ZS22U9_7L3
+l21
+L15
+V]QFN`?_<WY5@BcI79m@FG0
+!s100 K8ICLPHjdiH:_PGa`9^m42
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounter_mod_seg
+Z14 w1606181136
+R2
+R3
+R4
+R0
+Z15 8../../counter_mod_seg.vhd
+Z16 F../../counter_mod_seg.vhd
+l0
+L5
+VnP@[:O_0J``Y<DmzfUijM0
+!s100 A?Nk[19jj6=@KDQVkTz]F2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|../../counter_mod_seg.vhd|
+Z18 !s107 ../../counter_mod_seg.vhd|
+!i113 1
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 15 counter_mod_seg 0 22 nP@[:O_0J``Y<DmzfUijM0
+l23
+L16
+VBe_K@_FTJ5Zm0Y6KUZn<H3
+!s100 K_:IQ<j<lmLQO`;HiZCMT0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edivisor_freq
+Z19 w1605806057
+R2
+R3
+R4
+R0
+Z20 8../../divisor_freq.vhd
+Z21 F../../divisor_freq.vhd
+l0
+L5
+V<j_LgT213PV:1jW^8daA[2
+!s100 ;ILViJ@_ezVo6=WYPd:I43
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|../../divisor_freq.vhd|
+Z23 !s107 ../../divisor_freq.vhd|
+!i113 1
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 12 divisor_freq 0 22 <j_LgT213PV:1jW^8daA[2
+l22
+L11
+V`FXV??OG^DzSN<[PS?nmh2
+!s100 1Bd<TXI7ajMfz1TLj^NZV2
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Pmy_components
+R3
+R4
+w1605915786
+R0
+8../../my_components.vhd
+F../../my_components.vhd
+l0
+L4
+VI7_L]iXJcJOK87a[]kJ6a0
+!s100 3WCS12]ed?XLO3;bHH52h0
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|../../my_components.vhd|
+!s107 ../../my_components.vhd|
+!i113 1
+R12
+R13
+Ereloj_p
+Z24 w1605917562
+Z25 DPx4 work 13 my_components 0 22 I7_L]iXJcJOK87a[]kJ6a0
+R2
+R3
+R4
+R0
+Z26 8../../reloj_p.vhd
+Z27 F../../reloj_p.vhd
+l0
+L8
+V8ZZh49a<3K>Pg1^=X:e>L0
+!s100 @o[FR>V7e>MQ?fz];:oRX3
+R7
+31
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-93|-work|work|../../reloj_p.vhd|
+Z29 !s107 ../../reloj_p.vhd|
+!i113 1
+R12
+R13
+Aestructura
+R25
+R2
+R3
+R4
+DEx4 work 7 reloj_p 0 22 8ZZh49a<3K>Pg1^=X:e>L0
+l31
+L21
+VTzPef2<YT7eU>>UW0YV7>3
+!s100 03:bl:QUHIjjmGd4PNoT20
+R7
+31
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13
+Ereloj_p_vhd_tst
+Z30 w1605916902
+R3
+R4
+R0
+Z31 8reloj_p.vht
+Z32 Freloj_p.vht
+l0
+L31
+VRb8ULk`MDWj?ZoNL@hG5N3
+!s100 878^8JAI7H3n2P05o4zgJ2
+R7
+31
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-93|-work|work|reloj_p.vht|
+Z34 !s107 reloj_p.vht|
+!i113 1
+R12
+R13
+Areloj_p_arch
+R3
+R4
+DEx4 work 15 reloj_p_vhd_tst 0 22 Rb8ULk`MDWj?ZoNL@hG5N3
+l59
+L33
+VF51oaOANXz51TkW0=GPN11
+!s100 G_0mmGz8MPnGP6Q0Lgg8]2
+R7
+31
+R8
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13

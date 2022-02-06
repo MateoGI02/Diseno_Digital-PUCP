@@ -1,0 +1,361 @@
+|control_basket
+reset_n => reloj_p:contad_control_p.reset_n
+reset_n => reloj_l:contad_control_l.reset_n
+reset_n => fsm:maquina_estado.reset_n
+reset_n => contador_periodos:cuenta_periodo.reset_n
+reset_n => divisor_freq:divisor_frecqu.reset_n
+clock => reloj_p:contad_control_p.clk
+clock => reloj_l:contad_control_l.clk
+clock => fsm:maquina_estado.clk
+clock => contador_periodos:cuenta_periodo.clock
+clock => divisor_freq:divisor_frecqu.clk
+ini_pausa_per => fsm:maquina_estado.ini_pausa_per
+ini_pausa_lan => fsm:maquina_estado.ini_pausa_lan
+borrar_lan => fsm:maquina_estado.borrar_lan
+dpmin_dec[0] << reloj_p:contad_control_p.dmin_p_dec[0]
+dpmin_dec[1] << reloj_p:contad_control_p.dmin_p_dec[1]
+dpmin_dec[2] << reloj_p:contad_control_p.dmin_p_dec[2]
+dpmin_dec[3] << reloj_p:contad_control_p.dmin_p_dec[3]
+dpmin_dec[4] << reloj_p:contad_control_p.dmin_p_dec[4]
+dpmin_dec[5] << reloj_p:contad_control_p.dmin_p_dec[5]
+dpmin_dec[6] << reloj_p:contad_control_p.dmin_p_dec[6]
+dpmin_uni[0] << reloj_p:contad_control_p.dmin_p_uni[0]
+dpmin_uni[1] << reloj_p:contad_control_p.dmin_p_uni[1]
+dpmin_uni[2] << reloj_p:contad_control_p.dmin_p_uni[2]
+dpmin_uni[3] << reloj_p:contad_control_p.dmin_p_uni[3]
+dpmin_uni[4] << reloj_p:contad_control_p.dmin_p_uni[4]
+dpmin_uni[5] << reloj_p:contad_control_p.dmin_p_uni[5]
+dpmin_uni[6] << reloj_p:contad_control_p.dmin_p_uni[6]
+dpsec_dec[0] << reloj_p:contad_control_p.dsec_p_dec[0]
+dpsec_dec[1] << reloj_p:contad_control_p.dsec_p_dec[1]
+dpsec_dec[2] << reloj_p:contad_control_p.dsec_p_dec[2]
+dpsec_dec[3] << reloj_p:contad_control_p.dsec_p_dec[3]
+dpsec_dec[4] << reloj_p:contad_control_p.dsec_p_dec[4]
+dpsec_dec[5] << reloj_p:contad_control_p.dsec_p_dec[5]
+dpsec_dec[6] << reloj_p:contad_control_p.dsec_p_dec[6]
+dpsec_uni[0] << reloj_p:contad_control_p.dsec_p_uni[0]
+dpsec_uni[1] << reloj_p:contad_control_p.dsec_p_uni[1]
+dpsec_uni[2] << reloj_p:contad_control_p.dsec_p_uni[2]
+dpsec_uni[3] << reloj_p:contad_control_p.dsec_p_uni[3]
+dpsec_uni[4] << reloj_p:contad_control_p.dsec_p_uni[4]
+dpsec_uni[5] << reloj_p:contad_control_p.dsec_p_uni[5]
+dpsec_uni[6] << reloj_p:contad_control_p.dsec_p_uni[6]
+dlsec_dec[0] << reloj_l:contad_control_l.dsec_l_dec[0]
+dlsec_dec[1] << reloj_l:contad_control_l.dsec_l_dec[1]
+dlsec_dec[2] << reloj_l:contad_control_l.dsec_l_dec[2]
+dlsec_dec[3] << reloj_l:contad_control_l.dsec_l_dec[3]
+dlsec_dec[4] << reloj_l:contad_control_l.dsec_l_dec[4]
+dlsec_dec[5] << reloj_l:contad_control_l.dsec_l_dec[5]
+dlsec_dec[6] << reloj_l:contad_control_l.dsec_l_dec[6]
+dlsec_uni[0] << reloj_l:contad_control_l.dsec_l_uni[0]
+dlsec_uni[1] << reloj_l:contad_control_l.dsec_l_uni[1]
+dlsec_uni[2] << reloj_l:contad_control_l.dsec_l_uni[2]
+dlsec_uni[3] << reloj_l:contad_control_l.dsec_l_uni[3]
+dlsec_uni[4] << reloj_l:contad_control_l.dsec_l_uni[4]
+dlsec_uni[5] << reloj_l:contad_control_l.dsec_l_uni[5]
+dlsec_uni[6] << reloj_l:contad_control_l.dsec_l_uni[6]
+numero_periodo_del_partido[0] << contador_periodos:cuenta_periodo.salida_periodo[0]
+numero_periodo_del_partido[1] << contador_periodos:cuenta_periodo.salida_periodo[1]
+numero_periodo_del_partido[2] << contador_periodos:cuenta_periodo.salida_periodo[2]
+numero_periodo_del_partido[3] << contador_periodos:cuenta_periodo.salida_periodo[3]
+
+
+|control_basket|reloj_p:contad_control_p
+reset_n => g_reset_n.IN1
+reset_n => divisor_freq:div_frec.reset_n
+clk => counter_mod_min:contador_minutos.clk
+clk => counter_mod_seg:contador_segundos.clk
+clk => divisor_freq:div_frec.clk
+borrar => g_reset_n.IN0
+ini_pausa => g_reset_n.IN1
+ini_pausa => en_seg.IN1
+min_value_p <= cuent_12_59.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[0] <= counter_mod_seg:contador_segundos.segundos_decenas[0]
+dsec_p_dec[1] <= counter_mod_seg:contador_segundos.segundos_decenas[1]
+dsec_p_dec[2] <= counter_mod_seg:contador_segundos.segundos_decenas[2]
+dsec_p_dec[3] <= counter_mod_seg:contador_segundos.segundos_decenas[3]
+dsec_p_dec[4] <= counter_mod_seg:contador_segundos.segundos_decenas[4]
+dsec_p_dec[5] <= counter_mod_seg:contador_segundos.segundos_decenas[5]
+dsec_p_dec[6] <= counter_mod_seg:contador_segundos.segundos_decenas[6]
+dsec_p_uni[0] <= counter_mod_seg:contador_segundos.segundos_unidades[0]
+dsec_p_uni[1] <= counter_mod_seg:contador_segundos.segundos_unidades[1]
+dsec_p_uni[2] <= counter_mod_seg:contador_segundos.segundos_unidades[2]
+dsec_p_uni[3] <= counter_mod_seg:contador_segundos.segundos_unidades[3]
+dsec_p_uni[4] <= counter_mod_seg:contador_segundos.segundos_unidades[4]
+dsec_p_uni[5] <= counter_mod_seg:contador_segundos.segundos_unidades[5]
+dsec_p_uni[6] <= counter_mod_seg:contador_segundos.segundos_unidades[6]
+dmin_p_dec[0] <= counter_mod_min:contador_minutos.minutos_decenas[0]
+dmin_p_dec[1] <= counter_mod_min:contador_minutos.minutos_decenas[1]
+dmin_p_dec[2] <= counter_mod_min:contador_minutos.minutos_decenas[2]
+dmin_p_dec[3] <= counter_mod_min:contador_minutos.minutos_decenas[3]
+dmin_p_dec[4] <= counter_mod_min:contador_minutos.minutos_decenas[4]
+dmin_p_dec[5] <= counter_mod_min:contador_minutos.minutos_decenas[5]
+dmin_p_dec[6] <= counter_mod_min:contador_minutos.minutos_decenas[6]
+dmin_p_uni[0] <= counter_mod_min:contador_minutos.minutos_unidades[0]
+dmin_p_uni[1] <= counter_mod_min:contador_minutos.minutos_unidades[1]
+dmin_p_uni[2] <= counter_mod_min:contador_minutos.minutos_unidades[2]
+dmin_p_uni[3] <= counter_mod_min:contador_minutos.minutos_unidades[3]
+dmin_p_uni[4] <= counter_mod_min:contador_minutos.minutos_unidades[4]
+dmin_p_uni[5] <= counter_mod_min:contador_minutos.minutos_unidades[5]
+dmin_p_uni[6] <= counter_mod_min:contador_minutos.minutos_unidades[6]
+
+
+|control_basket|reloj_p:contad_control_p|counter_mod_min:contador_minutos
+reset_n => q[0].ACLR
+reset_n => q[1].ACLR
+reset_n => q[2].PRESET
+reset_n => q[3].PRESET
+reset_n => q[4].ACLR
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+en_min => q[4].ENA
+en_min => q[3].ENA
+en_min => q[2].ENA
+en_min => q[1].ENA
+en_min => q[0].ENA
+max_min <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[0] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[1] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[2] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[3] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[4] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[5] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+minutos_decenas[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[0] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[1] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[2] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[3] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[4] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[5] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+minutos_unidades[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|reloj_p:contad_control_p|counter_mod_seg:contador_segundos
+reset_n => reset_12_59.IN0
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+en_seg => q[5].ENA
+en_seg => q[4].ENA
+en_seg => q[3].ENA
+en_seg => q[2].ENA
+en_seg => q[1].ENA
+en_seg => q[0].ENA
+max_seg <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+cuent_12_59 => reset_12_59.IN1
+segundos_decenas[0] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[1] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[2] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[3] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[4] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[5] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[0] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[1] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[2] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[3] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[4] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[5] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|reloj_p:contad_control_p|divisor_freq:div_frec
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => clk_o_reg.ACLR
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => clk_o_reg.CLK
+clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|reloj_l:contad_control_l
+reset_n => g_reset_n.IN1
+reset_n => divisor_freq:div_frec.reset_n
+clk => counter_mod_seg_lan:contador_segundos.clk
+clk => divisor_freq:div_frec.clk
+borrar => g_reset_n.IN0
+ini_pausa => g_reset_n.IN1
+ini_pausa => en_seg.IN1
+min_value_l <= counter_mod_seg_lan:contador_segundos.max_seg
+dsec_l_dec[0] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[0]
+dsec_l_dec[1] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[1]
+dsec_l_dec[2] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[2]
+dsec_l_dec[3] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[3]
+dsec_l_dec[4] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[4]
+dsec_l_dec[5] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[5]
+dsec_l_dec[6] <= counter_mod_seg_lan:contador_segundos.segundos_decenas[6]
+dsec_l_uni[0] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[0]
+dsec_l_uni[1] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[1]
+dsec_l_uni[2] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[2]
+dsec_l_uni[3] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[3]
+dsec_l_uni[4] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[4]
+dsec_l_uni[5] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[5]
+dsec_l_uni[6] <= counter_mod_seg_lan:contador_segundos.segundos_unidades[6]
+
+
+|control_basket|reloj_l:contad_control_l|counter_mod_seg_lan:contador_segundos
+reset_n => q[0].ACLR
+reset_n => q[1].ACLR
+reset_n => q[2].ACLR
+reset_n => q[3].PRESET
+reset_n => q[4].PRESET
+reset_n => q[5].ACLR
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+en_seg => q[5].ENA
+en_seg => q[4].ENA
+en_seg => q[3].ENA
+en_seg => q[2].ENA
+en_seg => q[1].ENA
+en_seg => q[0].ENA
+max_seg <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[0] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[1] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[2] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[3] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[4] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[5] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+segundos_decenas[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[0] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[1] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[2] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[3] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[4] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[5] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+segundos_unidades[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos2[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|reloj_l:contad_control_l|divisor_freq:div_frec
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => clk_o_reg.ACLR
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => clk_o_reg.CLK
+clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|fsm:maquina_estado
+reset_n => divisor_freq:DivisorFrec.reset_n
+reset_n => estado_presente~9.DATAIN
+clk => divisor_freq:DivisorFrec.clk
+clk => estado_presente~7.DATAIN
+ini_pausa_per => process_1.IN0
+ini_pausa_per => process_1.IN0
+ini_pausa_per => Selector1.IN5
+ini_pausa_per => Selector0.IN2
+ini_pausa_per => process_1.IN0
+ini_pausa_per => process_1.IN0
+ini_pausa_lan => process_1.IN1
+ini_pausa_lan => process_1.IN1
+ini_pausa_lan => process_1.IN1
+ini_pausa_lan => process_1.IN1
+ini_pausa_lan => process_1.IN1
+borrar_lan => process_1.IN1
+borrar_lan => process_1.IN1
+borrar_lan => process_1.IN1
+borrar_lan => process_1.IN1
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.OUTPUTSELECT
+min_value_p => estado_siguiente.avanza_periodo.DATAB
+min_value_p => process_1.IN1
+min_value_p => process_1.IN1
+min_value_l => process_1.IN1
+min_value_l => process_1.IN1
+min_value_l => process_1.IN1
+min_value_l => process_1.IN1
+min_value_l => process_1.IN1
+ini_pausa_p <= ini_pausa_p.DB_MAX_OUTPUT_PORT_TYPE
+ini_pausa_l <= ini_pausa_l.DB_MAX_OUTPUT_PORT_TYPE
+borrar_l <= borrar_l.DB_MAX_OUTPUT_PORT_TYPE
+borrar_p <= borrar_p.DB_MAX_OUTPUT_PORT_TYPE
+enable_del_periodo <= enable_del_periodo.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|fsm:maquina_estado|divisor_freq:DivisorFrec
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => clk_o_reg.ACLR
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => clk_o_reg.CLK
+clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|contador_periodos:cuenta_periodo
+clock => q[0].CLK
+clock => q[1].CLK
+clock => q[2].CLK
+clock => q[3].CLK
+reset_n => q[0].PRESET
+reset_n => q[1].ACLR
+reset_n => q[2].ACLR
+reset_n => q[3].ACLR
+en => q[0].ENA
+en => q[3].ENA
+en => q[2].ENA
+en => q[1].ENA
+salida_periodo[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+salida_periodo[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+salida_periodo[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+salida_periodo[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_basket|divisor_freq:divisor_frecqu
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => clk_o_reg.ACLR
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => clk_o_reg.CLK
+clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+

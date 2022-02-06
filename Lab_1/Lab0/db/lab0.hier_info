@@ -1,0 +1,8 @@
+|lab0
+S => Z.IN0
+S => Z.IN0
+A => Z.IN1
+B => Z.IN1
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,131 @@
+|reloj_p
+reset_n => g_reset_n.IN0
+reset_n => g_reset_n.IN0
+reset_n => divisor_freq:etapa2.reset_n
+clk => counter_mod_min:etapa0.clk
+clk => counter_mod_seg:etapa1.clk
+clk => divisor_freq:etapa2.clk
+borrar => g_reset_n.IN1
+ini_pausa => g_reset_n.IN1
+ini_pausa => en_seg.IN1
+min_value_p << cuent_12_59.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[0] << counter_mod_seg:etapa1.dsec_p_dec[0]
+dsec_p_dec[1] << counter_mod_seg:etapa1.dsec_p_dec[1]
+dsec_p_dec[2] << counter_mod_seg:etapa1.dsec_p_dec[2]
+dsec_p_dec[3] << counter_mod_seg:etapa1.dsec_p_dec[3]
+dsec_p_dec[4] << counter_mod_seg:etapa1.dsec_p_dec[4]
+dsec_p_dec[5] << counter_mod_seg:etapa1.dsec_p_dec[5]
+dsec_p_dec[6] << counter_mod_seg:etapa1.dsec_p_dec[6]
+dsec_p_uni[0] << counter_mod_seg:etapa1.dsec_p_uni[0]
+dsec_p_uni[1] << counter_mod_seg:etapa1.dsec_p_uni[1]
+dsec_p_uni[2] << counter_mod_seg:etapa1.dsec_p_uni[2]
+dsec_p_uni[3] << counter_mod_seg:etapa1.dsec_p_uni[3]
+dsec_p_uni[4] << counter_mod_seg:etapa1.dsec_p_uni[4]
+dsec_p_uni[5] << counter_mod_seg:etapa1.dsec_p_uni[5]
+dsec_p_uni[6] << counter_mod_seg:etapa1.dsec_p_uni[6]
+dmin_p_dec[0] << counter_mod_min:etapa0.dmin_p_dec[0]
+dmin_p_dec[1] << counter_mod_min:etapa0.dmin_p_dec[1]
+dmin_p_dec[2] << counter_mod_min:etapa0.dmin_p_dec[2]
+dmin_p_dec[3] << counter_mod_min:etapa0.dmin_p_dec[3]
+dmin_p_dec[4] << counter_mod_min:etapa0.dmin_p_dec[4]
+dmin_p_dec[5] << counter_mod_min:etapa0.dmin_p_dec[5]
+dmin_p_dec[6] << counter_mod_min:etapa0.dmin_p_dec[6]
+dmin_p_uni[0] << counter_mod_min:etapa0.dmin_p_uni[0]
+dmin_p_uni[1] << counter_mod_min:etapa0.dmin_p_uni[1]
+dmin_p_uni[2] << counter_mod_min:etapa0.dmin_p_uni[2]
+dmin_p_uni[3] << counter_mod_min:etapa0.dmin_p_uni[3]
+dmin_p_uni[4] << counter_mod_min:etapa0.dmin_p_uni[4]
+dmin_p_uni[5] << counter_mod_min:etapa0.dmin_p_uni[5]
+dmin_p_uni[6] << counter_mod_min:etapa0.dmin_p_uni[6]
+
+
+|reloj_p|counter_mod_min:etapa0
+reset_n => q[0].ACLR
+reset_n => q[1].ACLR
+reset_n => q[2].PRESET
+reset_n => q[3].PRESET
+reset_n => q[4].ACLR
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+en_min => q[4].ENA
+en_min => q[3].ENA
+en_min => q[2].ENA
+en_min => q[1].ENA
+en_min => q[0].ENA
+max_min <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[0] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[1] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[2] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[3] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[4] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[5] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_dec[6] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[0] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[1] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[2] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[3] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[4] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+dmin_p_uni[6] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_minutos[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_p|counter_mod_seg:etapa1
+reset_n => reset_12_59.IN0
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+en_seg => q[5].ENA
+en_seg => q[4].ENA
+en_seg => q[3].ENA
+en_seg => q[2].ENA
+en_seg => q[1].ENA
+en_seg => q[0].ENA
+cuent_12_59 => reset_12_59.IN1
+max_seg <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[0] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[1] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[2] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[3] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[4] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[5] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_dec[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[0] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[1] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[2] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[3] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[4] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[5] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+dsec_p_uni[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+visualizador_q_segundos[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_p|divisor_freq:etapa2
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => clk_o_reg.ACLR
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => clk_o_reg.CLK
+clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+

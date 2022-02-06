@@ -1,0 +1,80 @@
+|shift_reg
+serial_input => mux2a1:mux1.X
+reset_n => ff_d:flip1.resetn
+reset_n => ff_d:flip2.resetn
+reset_n => ff_d:flip3.resetn
+reset_n => ff_d:flip4.resetn
+clk => ff_d:flip1.clk
+clk => ff_d:flip2.clk
+clk => ff_d:flip3.clk
+clk => ff_d:flip4.clk
+s_l => mux2a1:mux1.Sel
+s_l => mux2a1:mux2.Sel
+s_l => mux2a1:mux3.Sel
+s_l => mux2a1:mux4.Sel
+p[0] => mux2a1:mux4.Y
+p[1] => mux2a1:mux3.Y
+p[2] => mux2a1:mux2.Y
+p[3] => mux2a1:mux1.Y
+q[0] << ff_d:flip4.q
+q[1] << ff_d:flip3.q
+q[2] << ff_d:flip2.q
+q[3] << ff_d:flip1.q
+
+
+|shift_reg|mux2a1:mux1
+X => S.DATAB
+Y => S.DATAA
+Sel => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|ff_d:flip1
+clk => q~reg0.CLK
+resetn => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|mux2a1:mux2
+X => S.DATAB
+Y => S.DATAA
+Sel => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|ff_d:flip2
+clk => q~reg0.CLK
+resetn => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|mux2a1:mux3
+X => S.DATAB
+Y => S.DATAA
+Sel => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|ff_d:flip3
+clk => q~reg0.CLK
+resetn => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|mux2a1:mux4
+X => S.DATAB
+Y => S.DATAA
+Sel => S.OUTPUTSELECT
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg|ff_d:flip4
+clk => q~reg0.CLK
+resetn => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

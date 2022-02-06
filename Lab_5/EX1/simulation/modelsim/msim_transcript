@@ -1,0 +1,179 @@
+# do shift_reg_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB05/EX1/mux2a1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:03:59 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB05/EX1/mux2a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2a1
+# -- Compiling architecture logic1 of mux2a1
+# End time: 20:03:59 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB05/EX1/ff_d.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:03:59 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB05/EX1/ff_d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ff_d
+# -- Compiling architecture logic2 of ff_d
+# End time: 20:03:59 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB05/EX1/shift_reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:03:59 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB05/EX1/shift_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_reg
+# -- Compiling architecture logic of shift_reg
+# End time: 20:03:59 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB05/EX1/simulation/modelsim/shift_reg.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:03:59 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB05/EX1/simulation/modelsim/shift_reg.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_reg_vhd_tst
+# -- Compiling architecture shift_reg_arch of shift_reg_vhd_tst
+# End time: 20:03:59 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  shift_reg_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" shift_reg_vhd_tst 
+# Start time: 20:04:00 on Oct 19,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.shift_reg_vhd_tst(shift_reg_arch)
+# Loading work.shift_reg(logic)
+# Loading work.mux2a1(logic1)
+# Loading work.ff_d(logic2)
+# 
+# do C:/Users/ANDREA/Desktop/LAB05/EX1/start.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {../../mux2a1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:04:02 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work ../../mux2a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2a1
+# -- Compiling architecture logic1 of mux2a1
+# End time: 20:04:02 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../ff_d.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:04:02 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work ../../ff_d.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ff_d
+# -- Compiling architecture logic2 of ff_d
+# End time: 20:04:02 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../shift_reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:04:02 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work ../../shift_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_reg
+# -- Compiling architecture logic of shift_reg
+# End time: 20:04:02 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {shift_reg.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:04:02 on Oct 19,2020
+# vcom -reportprogress 300 -93 -work work shift_reg.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_reg_vhd_tst
+# -- Compiling architecture shift_reg_arch of shift_reg_vhd_tst
+# End time: 20:04:02 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  shift_reg_vhd_tst
+# End time: 20:04:03 on Oct 19,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" shift_reg_vhd_tst 
+# Start time: 20:04:03 on Oct 19,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.shift_reg_vhd_tst(shift_reg_arch)
+# Loading work.shift_reg(logic)
+# Loading work.mux2a1(logic1)
+# Loading work.ff_d(logic2)
+# 
+#add wave *
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -divider Entradas
+# add wave -noupdate /shift_reg_vhd_tst/clk
+# add wave -noupdate -radix unsigned /shift_reg_vhd_tst/p
+# add wave -noupdate /shift_reg_vhd_tst/reset_n
+# add wave -noupdate /shift_reg_vhd_tst/s_l
+# add wave -noupdate /shift_reg_vhd_tst/serial_input
+# add wave -noupdate -divider {Señales Internas}
+# add wave -noupdate /shift_reg_vhd_tst/i1/n
+# add wave -noupdate -divider Salidas
+# add wave -noupdate /shift_reg_vhd_tst/q
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {98347 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ps
+# update
+# WaveRestoreZoom {0 ps} {105 ns}
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# End time: 20:05:40 on Oct 19,2020, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 0

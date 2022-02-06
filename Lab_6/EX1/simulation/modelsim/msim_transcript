@@ -1,0 +1,269 @@
+# do reloj_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/counter_mod_seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/counter_mod_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_mod_seg
+# -- Compiling architecture logica1 of counter_mod_seg
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/counter_mod_min.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/counter_mod_min.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_mod_min
+# -- Compiling architecture logica2 of counter_mod_min
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/divisor_freq.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/divisor_freq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor_freq
+# -- Compiling architecture structural of divisor_freq
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/my_components.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/my_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_components
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/reloj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_components
+# -- Compiling entity reloj
+# -- Compiling architecture logica of reloj
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB06/EX1/simulation/modelsim/reloj.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:01 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB06/EX1/simulation/modelsim/reloj.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reloj_vhd_tst
+# -- Compiling architecture reloj_arch of reloj_vhd_tst
+# End time: 21:32:01 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  reloj_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" reloj_vhd_tst 
+# Start time: 21:32:01 on Nov 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.reloj_vhd_tst(reloj_arch)
+# Loading work.my_components
+# Loading work.reloj(logica)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_mod_seg(logica1)
+# Loading work.counter_mod_min(logica2)
+# Loading ieee.numeric_std(body)
+# Loading work.divisor_freq(structural)
+# 
+# do C:/Users/ANDREA/Desktop/LAB06/EX1/start.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {../../counter_mod_seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:03 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work ../../counter_mod_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_mod_seg
+# -- Compiling architecture logica1 of counter_mod_seg
+# End time: 21:32:03 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../counter_mod_min.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:03 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work ../../counter_mod_min.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_mod_min
+# -- Compiling architecture logica2 of counter_mod_min
+# End time: 21:32:04 on Nov 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../divisor_freq.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:04 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work ../../divisor_freq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor_freq
+# -- Compiling architecture structural of divisor_freq
+# End time: 21:32:04 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../my_components.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:04 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work ../../my_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_components
+# End time: 21:32:04 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:04 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work ../../reloj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_components
+# -- Compiling entity reloj
+# -- Compiling architecture logica of reloj
+# End time: 21:32:04 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {reloj.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:32:04 on Nov 02,2020
+# vcom -reportprogress 300 -93 -work work reloj.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reloj_vhd_tst
+# -- Compiling architecture reloj_arch of reloj_vhd_tst
+# End time: 21:32:04 on Nov 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  reloj_vhd_tst
+# End time: 21:32:07 on Nov 02,2020, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" reloj_vhd_tst 
+# Start time: 21:32:07 on Nov 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.reloj_vhd_tst(reloj_arch)
+# Loading work.my_components
+# Loading work.reloj(logica)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_mod_seg(logica1)
+# Loading work.counter_mod_min(logica2)
+# Loading ieee.numeric_std(body)
+# Loading work.divisor_freq(structural)
+# 
+#add wave *
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -divider Entradas
+# add wave -noupdate /reloj_vhd_tst/borrar
+# add wave -noupdate /reloj_vhd_tst/clk
+# add wave -noupdate /reloj_vhd_tst/ini_pausa
+# add wave -noupdate /reloj_vhd_tst/reset_n
+# add wave -noupdate -divider Señales_Internas
+# add wave -noupdate -radix unsigned /reloj_vhd_tst/i1/contadorseg/q1
+# add wave -noupdate -radix unsigned /reloj_vhd_tst/i1/contadorseg/q2
+# add wave -noupdate -radix unsigned /reloj_vhd_tst/i1/contadormin/q1
+# add wave -noupdate -radix unsigned /reloj_vhd_tst/i1/contadormin/q2
+# add wave -noupdate -divider Salidas
+# add wave -noupdate /reloj_vhd_tst/segundos_unidades
+# add wave -noupdate /reloj_vhd_tst/segundos_decenas
+# add wave -noupdate /reloj_vhd_tst/minutos_unidades
+# add wave -noupdate /reloj_vhd_tst/minutos_decenas
+# add wave -noupdate /reloj_vhd_tst/max_value
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ps
+# update
+# WaveRestoreZoom {0 ps} {840 ns}
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 800 ns
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/divisorfre
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadormin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadormin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadormin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadormin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadormin
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadorseg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadorseg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadorseg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /reloj_vhd_tst/i1/contadorseg
+# End time: 21:32:15 on Nov 02,2020, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 10

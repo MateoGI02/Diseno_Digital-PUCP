@@ -1,0 +1,9 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+Package my_components is
+	Component vaina1
+		
+		
+	End component;
+End my_components;	

@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim
+Eexp2
+Z1 w1600739074
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd
+Z5 FC:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd
+l0
+L15
+V0^EoR=agViMLGZV<[?Xke2
+!s100 ESl[T@c]SU0fdM::VZZHZ2
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1600739843
+!i10b 1
+Z8 !s108 1600739843.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd|
+Z10 !s107 C:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Alogica
+R2
+R3
+DEx4 work 4 exp2 0 22 0^EoR=agViMLGZV<[?Xke2
+l24
+L20
+VPgQ5Ba`_FFF[S`R`4Ebo<1
+!s100 >keed3j4EJcMN_WUNU^F`2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eexp2_vhd_tst
+Z13 w1600739829
+R2
+R3
+R0
+Z14 8C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht
+Z15 FC:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht
+l0
+L31
+V^2SdBzGcXRC6KLG;T[^SZ0
+!s100 m[o`mmV[]Il]4QB[z1Y^E1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht|
+Z17 !s107 C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht|
+!i113 1
+R11
+R12
+Aexp2_arch
+R2
+R3
+DEx4 work 12 exp2_vhd_tst 0 22 ^2SdBzGcXRC6KLG;T[^SZ0
+l62
+L33
+V]j@>lXQ5eoo[j8idn;dfB0
+!s100 [W?c3kl_TAF`XCagWkZBJ3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

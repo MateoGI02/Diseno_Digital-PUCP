@@ -1,0 +1,22 @@
+|seguidor_moore
+reset_n => estado_presente~3.DATAIN
+clk => estado_presente~1.DATAIN
+P => process_1.IN0
+P => process_1.IN0
+P => estado_siguiente.SMF.OUTPUTSELECT
+P => estado_siguiente.SMI.OUTPUTSELECT
+P => estado_siguiente.SMI.IN1
+P => estado_siguiente.SMD.OUTPUTSELECT
+P => estado_siguiente.NSM.OUTPUTSELECT
+L => process_1.IN1
+L => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+M1a <= M1a.DB_MAX_OUTPUT_PORT_TYPE
+M2a <= M2a.DB_MAX_OUTPUT_PORT_TYPE
+M2l <= M2l.DB_MAX_OUTPUT_PORT_TYPE
+M2r <= M2r.DB_MAX_OUTPUT_PORT_TYPE
+
+

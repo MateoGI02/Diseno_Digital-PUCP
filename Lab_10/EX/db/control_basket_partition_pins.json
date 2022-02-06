@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dpmin_dec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_dec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_dec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_dec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_dec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_dec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dpmin_uni[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_dec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dpsec_uni[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_dec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dlsec_uni[6]",
+					"strict" : false
+				},
+				{
+					"name" : "numero_periodo_del_partido[0]",
+					"strict" : false
+				},
+				{
+					"name" : "numero_periodo_del_partido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "numero_periodo_del_partido[2]",
+					"strict" : false
+				},
+				{
+					"name" : "numero_periodo_del_partido[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa_per",
+					"strict" : false
+				},
+				{
+					"name" : "borrar_lan",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa_lan",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

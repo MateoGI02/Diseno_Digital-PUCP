@@ -1,0 +1,38 @@
+|exp2
+x => Mux0.IN16
+x => Mux1.IN16
+x => Mux2.IN16
+x => Mux3.IN16
+x => Mux4.IN16
+x => Mux5.IN16
+x => Mux6.IN16
+y => Mux0.IN17
+y => Mux1.IN17
+y => Mux2.IN17
+y => Mux3.IN17
+y => Mux4.IN17
+y => Mux5.IN17
+y => Mux6.IN17
+z => Mux0.IN18
+z => Mux1.IN18
+z => Mux2.IN18
+z => Mux3.IN18
+z => Mux4.IN18
+z => Mux5.IN18
+z => Mux6.IN18
+w => Mux0.IN19
+w => Mux1.IN19
+w => Mux2.IN19
+w => Mux3.IN19
+w => Mux4.IN19
+w => Mux5.IN19
+w => Mux6.IN19
+a << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+e << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+g << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+
+

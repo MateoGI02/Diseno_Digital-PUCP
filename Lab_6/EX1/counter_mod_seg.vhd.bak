@@ -1,0 +1,14 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use work.my_components.all;
+
+Entity counter_mod_seg is
+	Port(
+		);
+End counter_mod_seg;
+
+Architecture logica1 of counter_mod_seg is
+	signal ;
+Begin
+
+End logica1;

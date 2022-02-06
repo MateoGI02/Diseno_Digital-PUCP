@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/LAB04/EX1/simulation/modelsim
+Edec3a8
+Z1 w1602521239
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../dec3a8.vhd
+Z5 F../../dec3a8.vhd
+l0
+L4
+VS9mVZ5;EbVa6?oY^JN3W`0
+!s100 im]CI^m=6U[o]KhbEef_11
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1602553230
+!i10b 1
+Z8 !s108 1602553229.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../../dec3a8.vhd|
+Z10 !s107 ../../dec3a8.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Alogic1
+R2
+R3
+DEx4 work 6 dec3a8 0 22 S9mVZ5;EbVa6?oY^JN3W`0
+l12
+L10
+VWhPlnI4;3gL:bn;D[g;RA0
+!s100 I5o9bH<dedj]KSGXOfhRN3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eex1
+Z13 w1602552682
+R2
+R3
+R0
+Z14 8../../ex1.vhd
+Z15 F../../ex1.vhd
+l0
+L4
+VMODab8QIEL<j2YDFAFL]M0
+!s100 WNd1dO4Q:P`f>IzHlnil12
+R6
+31
+R7
+!i10b 1
+Z16 !s108 1602553230.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|../../ex1.vhd|
+Z18 !s107 ../../ex1.vhd|
+!i113 1
+R11
+R12
+Alogic1
+R2
+R3
+DEx4 work 3 ex1 0 22 MODab8QIEL<j2YDFAFL]M0
+l18
+L9
+V0cN[;HaL>AgKjAA5_=DFB1
+!s100 1f08J?OVEnke2BfLSjBA63
+R6
+31
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Eex1_vhd_tst
+Z19 w1602552944
+R2
+R3
+R0
+Z20 8ex1.vht
+Z21 Fex1.vht
+l0
+L31
+V1]6T9M?6kgd:cY]9mUiD:1
+!s100 D9eA?Y_hi0EN]1z3GO?AH1
+R6
+31
+R7
+!i10b 1
+R16
+Z22 !s90 -reportprogress|300|-93|-work|work|ex1.vht|
+Z23 !s107 ex1.vht|
+!i113 1
+R11
+R12
+Aex1_arch
+R2
+R3
+DEx4 work 11 ex1_vhd_tst 0 22 1]6T9M?6kgd:cY]9mUiD:1
+l52
+L33
+VNgHQ^0S;[bMURSWYIIGSL2
+!s100 FLS8k:8W@jn_?WOHfbjaa1
+R6
+31
+R7
+!i10b 1
+R16
+R22
+R23
+!i113 1
+R11
+R12

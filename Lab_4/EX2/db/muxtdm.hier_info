@@ -1,0 +1,140 @@
+|muxtdm
+W[0] => dec2a4:deco.W[0]
+W[1] => dec2a4:deco.W[1]
+EN => dec2a4:deco.EN
+a_i[0] => mux4a1:mux.a_i[0]
+a_i[1] => mux4a1:mux.a_i[1]
+a_i[2] => mux4a1:mux.a_i[2]
+a_i[3] => mux4a1:mux.a_i[3]
+b_i[0] => mux4a1:mux.b_i[0]
+b_i[1] => mux4a1:mux.b_i[1]
+b_i[2] => mux4a1:mux.b_i[2]
+b_i[3] => mux4a1:mux.b_i[3]
+c_i[0] => mux4a1:mux.c_i[0]
+c_i[1] => mux4a1:mux.c_i[1]
+c_i[2] => mux4a1:mux.c_i[2]
+c_i[3] => mux4a1:mux.c_i[3]
+d_i[0] => mux4a1:mux.d_i[0]
+d_i[1] => mux4a1:mux.d_i[1]
+d_i[2] => mux4a1:mux.d_i[2]
+d_i[3] => mux4a1:mux.d_i[3]
+a_0[0] << demux1a4:demux.a_0[0]
+a_0[1] << demux1a4:demux.a_0[1]
+a_0[2] << demux1a4:demux.a_0[2]
+a_0[3] << demux1a4:demux.a_0[3]
+b_0[0] << demux1a4:demux.b_0[0]
+b_0[1] << demux1a4:demux.b_0[1]
+b_0[2] << demux1a4:demux.b_0[2]
+b_0[3] << demux1a4:demux.b_0[3]
+c_0[0] << demux1a4:demux.c_0[0]
+c_0[1] << demux1a4:demux.c_0[1]
+c_0[2] << demux1a4:demux.c_0[2]
+c_0[3] << demux1a4:demux.c_0[3]
+d_0[0] << demux1a4:demux.d_0[0]
+d_0[1] << demux1a4:demux.d_0[1]
+d_0[2] << demux1a4:demux.d_0[2]
+d_0[3] << demux1a4:demux.d_0[3]
+
+
+|muxtdm|dec2a4:deco
+W[0] => Equal0.IN2
+W[0] => Equal1.IN0
+W[0] => Equal2.IN2
+W[0] => Equal3.IN1
+W[1] => Equal0.IN1
+W[1] => Equal1.IN2
+W[1] => Equal2.IN0
+W[1] => Equal3.IN0
+EN => Equal0.IN0
+EN => Equal1.IN1
+EN => Equal2.IN1
+EN => Equal3.IN2
+Y[0] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|muxtdm|cod4a2:co
+W[0] => Equal0.IN2
+W[0] => Equal1.IN2
+W[0] => Equal2.IN3
+W[1] => Equal0.IN1
+W[1] => Equal1.IN3
+W[1] => Equal2.IN2
+W[2] => Equal0.IN3
+W[2] => Equal1.IN1
+W[2] => Equal2.IN1
+W[3] => Equal0.IN0
+W[3] => Equal1.IN0
+W[3] => Equal2.IN0
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|muxtdm|mux4a1:mux
+Sel[0] => Equal0.IN0
+Sel[0] => Equal1.IN1
+Sel[0] => Equal2.IN1
+Sel[1] => Equal0.IN1
+Sel[1] => Equal1.IN0
+Sel[1] => Equal2.IN0
+a_i[0] => f.DATAB
+a_i[1] => f.DATAB
+a_i[2] => f.DATAB
+a_i[3] => f.DATAB
+b_i[0] => f.DATAB
+b_i[1] => f.DATAB
+b_i[2] => f.DATAB
+b_i[3] => f.DATAB
+c_i[0] => f.DATAB
+c_i[1] => f.DATAB
+c_i[2] => f.DATAB
+c_i[3] => f.DATAB
+d_i[0] => f.DATAA
+d_i[1] => f.DATAA
+d_i[2] => f.DATAA
+d_i[3] => f.DATAA
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|muxtdm|demux1a4:demux
+Sel[0] => ~NO_FANOUT~
+Sel[1] => ~NO_FANOUT~
+f[0] => d_0[0].DATAIN
+f[0] => a_0[0].DATAIN
+f[0] => b_0[0].DATAIN
+f[0] => c_0[0].DATAIN
+f[1] => d_0[1].DATAIN
+f[1] => a_0[1].DATAIN
+f[1] => b_0[1].DATAIN
+f[1] => c_0[1].DATAIN
+f[2] => d_0[2].DATAIN
+f[2] => a_0[2].DATAIN
+f[2] => b_0[2].DATAIN
+f[2] => c_0[2].DATAIN
+f[3] => d_0[3].DATAIN
+f[3] => a_0[3].DATAIN
+f[3] => b_0[3].DATAIN
+f[3] => c_0[3].DATAIN
+a_0[0] <= f[0].DB_MAX_OUTPUT_PORT_TYPE
+a_0[1] <= f[1].DB_MAX_OUTPUT_PORT_TYPE
+a_0[2] <= f[2].DB_MAX_OUTPUT_PORT_TYPE
+a_0[3] <= f[3].DB_MAX_OUTPUT_PORT_TYPE
+b_0[0] <= f[0].DB_MAX_OUTPUT_PORT_TYPE
+b_0[1] <= f[1].DB_MAX_OUTPUT_PORT_TYPE
+b_0[2] <= f[2].DB_MAX_OUTPUT_PORT_TYPE
+b_0[3] <= f[3].DB_MAX_OUTPUT_PORT_TYPE
+c_0[0] <= f[0].DB_MAX_OUTPUT_PORT_TYPE
+c_0[1] <= f[1].DB_MAX_OUTPUT_PORT_TYPE
+c_0[2] <= f[2].DB_MAX_OUTPUT_PORT_TYPE
+c_0[3] <= f[3].DB_MAX_OUTPUT_PORT_TYPE
+d_0[0] <= f[0].DB_MAX_OUTPUT_PORT_TYPE
+d_0[1] <= f[1].DB_MAX_OUTPUT_PORT_TYPE
+d_0[2] <= f[2].DB_MAX_OUTPUT_PORT_TYPE
+d_0[3] <= f[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

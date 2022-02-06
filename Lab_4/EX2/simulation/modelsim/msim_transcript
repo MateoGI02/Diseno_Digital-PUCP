@@ -1,0 +1,257 @@
+# do muxtdm_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/dec2a4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/dec2a4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec2a4
+# -- Compiling architecture logic4 of dec2a4
+# End time: 20:15:24 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/cod4a2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/cod4a2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cod4a2
+# -- Compiling architecture logic3 of cod4a2
+# End time: 20:15:24 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/mux4a1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/mux4a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4a1
+# -- Compiling architecture logic2 of mux4a1
+# End time: 20:15:24 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/demux1a4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/demux1a4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity demux1a4
+# -- Compiling architecture logic1 of demux1a4
+# End time: 20:15:24 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/my_circuits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/my_circuits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_circuits
+# End time: 20:15:24 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/muxtdm.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:24 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/muxtdm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_circuits
+# -- Compiling entity muxtdm
+# -- Compiling architecture logic of muxtdm
+# End time: 20:15:25 on Oct 12,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/simulation/modelsim/muxtdm.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:25 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/LAB04/EX2/simulation/modelsim/muxtdm.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity muxtdm_vhd_tst
+# -- Compiling architecture muxtdm_arch of muxtdm_vhd_tst
+# End time: 20:15:25 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  muxtdm_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" muxtdm_vhd_tst 
+# Start time: 20:15:25 on Oct 12,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.muxtdm_vhd_tst(muxtdm_arch)
+# Loading work.my_circuits
+# Loading work.muxtdm(logic)
+# Loading work.dec2a4(logic4)
+# Loading work.cod4a2(logic3)
+# Loading work.mux4a1(logic2)
+# Loading work.demux1a4(logic1)
+# 
+# do C:/Users/ANDREA/Desktop/LAB04/EX2/start.do.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {../../dec2a4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../dec2a4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dec2a4
+# -- Compiling architecture logic4 of dec2a4
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../cod4a2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../cod4a2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cod4a2
+# -- Compiling architecture logic3 of cod4a2
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../mux4a1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../mux4a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4a1
+# -- Compiling architecture logic2 of mux4a1
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../demux1a4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../demux1a4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity demux1a4
+# -- Compiling architecture logic1 of demux1a4
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../my_circuits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../my_circuits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_circuits
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../muxtdm.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work ../../muxtdm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_circuits
+# -- Compiling entity muxtdm
+# -- Compiling architecture logic of muxtdm
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {muxtdm.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:15:27 on Oct 12,2020
+# vcom -reportprogress 300 -93 -work work muxtdm.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity muxtdm_vhd_tst
+# -- Compiling architecture muxtdm_arch of muxtdm_vhd_tst
+# End time: 20:15:27 on Oct 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  muxtdm_vhd_tst
+# End time: 20:15:28 on Oct 12,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" muxtdm_vhd_tst 
+# Start time: 20:15:28 on Oct 12,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.muxtdm_vhd_tst(muxtdm_arch)
+# Loading work.my_circuits
+# Loading work.muxtdm(logic)
+# Loading work.dec2a4(logic4)
+# Loading work.cod4a2(logic3)
+# Loading work.mux4a1(logic2)
+# Loading work.demux1a4(logic1)
+# 
+#add wave *
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -divider Entradas
+# add wave -noupdate /muxtdm_vhd_tst/EN
+# add wave -noupdate /muxtdm_vhd_tst/W
+# add wave -noupdate /muxtdm_vhd_tst/a_i
+# add wave -noupdate /muxtdm_vhd_tst/b_i
+# add wave -noupdate /muxtdm_vhd_tst/c_i
+# add wave -noupdate /muxtdm_vhd_tst/d_i
+# add wave -noupdate -divider {Señales Internas}
+# add wave -noupdate /muxtdm_vhd_tst/i1/mux/f
+# add wave -noupdate /muxtdm_vhd_tst/i1/deco/Y
+# add wave -noupdate /muxtdm_vhd_tst/i1/co/Y
+# add wave -noupdate -divider Salidas
+# add wave -noupdate /muxtdm_vhd_tst/a_0
+# add wave -noupdate /muxtdm_vhd_tst/b_0
+# add wave -noupdate /muxtdm_vhd_tst/c_0
+# add wave -noupdate /muxtdm_vhd_tst/d_0
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {51372 ps}
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 120 ns
+# End time: 20:17:48 on Oct 12,2020, Elapsed time: 0:02:20
+# Errors: 0, Warnings: 0

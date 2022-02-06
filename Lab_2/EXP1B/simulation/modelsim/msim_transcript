@@ -1,0 +1,54 @@
+# do circuitoex1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:37:35 on Sep 21,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity circuitoex1
+# -- Compiling architecture logica of circuitoex1
+# End time: 19:37:35 on Sep 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 19:37:35 on Sep 21,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity circuitoex1_vhd_tst
+# -- Compiling architecture circuitoex1_arch of circuitoex1_vhd_tst
+# End time: 19:37:35 on Sep 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  circuitoex1_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" circuitoex1_vhd_tst 
+# Start time: 19:37:35 on Sep 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.circuitoex1_vhd_tst(circuitoex1_arch)
+# Loading work.circuitoex1(logica)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 80 ns
+# End time: 21:10:42 on Sep 21,2020, Elapsed time: 1:33:07
+# Errors: 0, Warnings: 0

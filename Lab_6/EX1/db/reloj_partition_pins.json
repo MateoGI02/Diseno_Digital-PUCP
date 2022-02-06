@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "segundos_decenas[7]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_decenas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_decenas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_decenas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_decenas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_decenas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[7]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segundos_unidades[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[7]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[6]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[5]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minutos_unidades[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "borrar",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

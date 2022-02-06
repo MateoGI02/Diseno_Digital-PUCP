@@ -1,0 +1,152 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/LAB09/EX1/simulation/modelsim
+Edivisor_freq
+Z1 w1606765952
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8../../divisor_freq.vhd
+Z6 F../../divisor_freq.vhd
+l0
+L6
+V1EokE4=CAcgZNGBDik:gW1
+!s100 Di<7]m]OQOkacm48]b3N?2
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1606782063
+!i10b 1
+Z9 !s108 1606782063.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../divisor_freq.vhd|
+Z11 !s107 ../../divisor_freq.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Astructural
+R2
+R3
+R4
+DEx4 work 12 divisor_freq 0 22 1EokE4=CAcgZNGBDik:gW1
+l23
+L12
+Va=QzTO>7WXeJX?iN1jfbk3
+!s100 5zPURSaTH=Od:2FJH@cDF1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efsm
+Z14 w1606782024
+Z15 DPx4 work 13 my_components 0 22 oXT@oc_LG79EO@3ORQYVh0
+R3
+R4
+R0
+Z16 8../../fsm.vhd
+Z17 F../../fsm.vhd
+l0
+L5
+VEhl3hR@G3[VG;EDWUo@NB0
+!s100 [a]LE@2@JIM2]Ka?65hfC1
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|../../fsm.vhd|
+Z19 !s107 ../../fsm.vhd|
+!i113 1
+R12
+R13
+Aestructura
+R15
+R3
+R4
+DEx4 work 3 fsm 0 22 Ehl3hR@G3[VG;EDWUo@NB0
+l22
+L18
+V>?5ElRo70[FKM1Xg0eK?e1
+!s100 X]9iDJTUin;H_;7a3XTeF3
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Efsm_vhd_tst
+Z20 w1606770255
+R3
+R4
+R0
+Z21 8fsm.vht
+Z22 Ffsm.vht
+l0
+L31
+V>9GVNIfmZ@5OhziO:PS8W3
+!s100 _z99_m7138X6I@nX>3gRE3
+R7
+31
+Z23 !s110 1606782064
+!i10b 1
+Z24 !s108 1606782064.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|fsm.vht|
+Z26 !s107 fsm.vht|
+!i113 1
+R12
+R13
+Afsm_arch
+R3
+R4
+DEx4 work 11 fsm_vhd_tst 0 22 >9GVNIfmZ@5OhziO:PS8W3
+l63
+L33
+VTHRWAWGdWCQB97Tm:5XDN3
+!s100 :eiE1CQG@1GENF0=[4Cml3
+R7
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Pmy_components
+R3
+R4
+w1606709173
+R0
+8../../my_components.vhd
+F../../my_components.vhd
+l0
+L4
+VoXT@oc_LG79EO@3ORQYVh0
+!s100 RR4ngC<LQlUX]I3RR=WkB1
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|../../my_components.vhd|
+!s107 ../../my_components.vhd|
+!i113 1
+R12
+R13

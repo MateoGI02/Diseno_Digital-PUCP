@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/dec2a4.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/cod4a2.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/mux4a1.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/demux1a4.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/my_circuits.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/muxtdm.vhd}
+
+vcom -93 -work work {C:/Users/ANDREA/Desktop/LAB04/EX2/simulation/modelsim/muxtdm.vht}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  muxtdm_vhd_tst
+
+do C:/Users/ANDREA/Desktop/LAB04/EX2/start.do.do

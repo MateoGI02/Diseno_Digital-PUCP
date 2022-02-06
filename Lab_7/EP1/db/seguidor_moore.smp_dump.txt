@@ -1,0 +1,7 @@
+
+State Machine - |seguidor_moore|estado_presente
+Name estado_presente.SMF estado_presente.SMI estado_presente.SMD estado_presente.NSM 
+estado_presente.NSM 0 0 0 0 
+estado_presente.SMD 0 0 1 1 
+estado_presente.SMI 0 1 0 1 
+estado_presente.SMF 1 0 0 1 

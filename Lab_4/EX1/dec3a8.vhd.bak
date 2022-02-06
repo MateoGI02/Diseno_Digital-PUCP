@@ -1,0 +1,22 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY  dec3a8 IS
+	PORT ( EN   : IN  STD_LOGIC;
+			 W    : IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
+			 Y    : OUT STD:LOGIC_VECTOR(7 DOWNTO 0));
+END dec3a8;
+
+ARCHITECTURE logic1 OF dec3a8 IS
+	SIGNAL X: IN STD_LOGIC;
+BEGIN
+	X<= EN & W ;
+	IF X='1000' THEN Y(0)<='1';
+	IF X='1001' THEN Y(1)<='1';
+	IF X='1010' THEN Y(2)<='1';
+	IF X='1011' THEN Y(3)<='1';
+	IF X='1100' THEN Y(4)<='1';
+	IF X='1101' THEN Y(5)<='1';
+	IF X='1110' THEN Y(6)<='1';
+	IF X='1111' THEN Y(7)<='1';
+END logic1

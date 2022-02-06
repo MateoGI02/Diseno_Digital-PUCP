@@ -1,0 +1,24 @@
+|seguidor_mealy
+reset_n => estado_presente~3.DATAIN
+clk => estado_presente~1.DATAIN
+P => process_1.IN0
+P => process_1.IN0
+P => M2r.OUTPUTSELECT
+P => M2l.OUTPUTSELECT
+P => M2a.OUTPUTSELECT
+P => M1a.OUTPUTSELECT
+P => M1a.IN1
+P => estado_siguiente.SMF.OUTPUTSELECT
+P => estado_siguiente.NSM.OUTPUTSELECT
+L => process_1.IN1
+L => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+R => process_1.IN1
+M1a <= M1a$latch.DB_MAX_OUTPUT_PORT_TYPE
+M2a <= M2a$latch.DB_MAX_OUTPUT_PORT_TYPE
+M2l <= M2l$latch.DB_MAX_OUTPUT_PORT_TYPE
+M2r <= M2r$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

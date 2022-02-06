@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/fulladder.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/my_subcircuits.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/my_circuits.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/adder.vhd}
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/addsub.vhd}
+
+vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab3/EX1/simulation/modelsim/addsub.vht}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  addsub_vhd_tst
+
+do C:/Users/ANDREA/Desktop/Lab3/EX1/start.do

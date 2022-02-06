@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ini_pausa_l",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa_p",
+					"strict" : false
+				},
+				{
+					"name" : "borrar_p",
+					"strict" : false
+				},
+				{
+					"name" : "borrar_l",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa_lan",
+					"strict" : false
+				},
+				{
+					"name" : "ini_pausa_per",
+					"strict" : false
+				},
+				{
+					"name" : "min_value_p",
+					"strict" : false
+				},
+				{
+					"name" : "min_value_l",
+					"strict" : false
+				},
+				{
+					"name" : "borrar_lan",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

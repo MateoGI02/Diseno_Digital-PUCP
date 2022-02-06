@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim
+Ecircuitoex1
+Z1 w1600734488
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd
+Z5 FC:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd
+l0
+L15
+V>am_<PNTEz@E<:C5d3PY03
+!s100 N`8::M<zhRId`8HeGGMZ41
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1600735055
+!i10b 1
+Z8 !s108 1600735055.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd|
+Z10 !s107 C:/Users/ANDREA/Desktop/Lab_2/EXP1B/circuitoex1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Alogica
+R2
+R3
+DEx4 work 11 circuitoex1 0 22 >am_<PNTEz@E<:C5d3PY03
+l22
+L20
+VZAK[DC`P>Jim]m1j_GDnO1
+!s100 8QhdCcRHO4[e3G`]7S@AX3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecircuitoex1_vhd_tst
+Z13 w1600734698
+R2
+R3
+R0
+Z14 8C:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht
+Z15 FC:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht
+l0
+L31
+VYDnbXnWh@VzJ7_;Dd8n]91
+!s100 UMKnEogcCI[YE1VV`Y0a73
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht|
+Z17 !s107 C:/Users/ANDREA/Desktop/Lab_2/EXP1B/simulation/modelsim/circuitoex1.vht|
+!i113 1
+R11
+R12
+Acircuitoex1_arch
+R2
+R3
+DEx4 work 19 circuitoex1_vhd_tst 0 22 YDnbXnWh@VzJ7_;Dd8n]91
+l50
+L33
+VD?MjjA=>=C;Eh@ZUb0U<D0
+!s100 JddSMT]6X>JmD51>^JGBM3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

@@ -1,0 +1,56 @@
+# do exp2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:57:23 on Sep 21,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/Lab_2/EXP2/exp2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity exp2
+# -- Compiling architecture logica of exp2
+# End time: 20:57:23 on Sep 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 20:57:23 on Sep 21,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/exp2.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity exp2_vhd_tst
+# -- Compiling architecture exp2_arch of exp2_vhd_tst
+# End time: 20:57:23 on Sep 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  exp2_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" exp2_vhd_tst 
+# Start time: 20:57:23 on Sep 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.exp2_vhd_tst(exp2_arch)
+# Loading work.exp2(logica)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 80 ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/ANDREA/Desktop/Lab_2/EXP2/simulation/modelsim/wave.do
+# End time: 21:10:55 on Sep 21,2020, Elapsed time: 0:13:32
+# Errors: 0, Warnings: 0

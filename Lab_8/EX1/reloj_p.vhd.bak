@@ -1,0 +1,38 @@
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity counter_mod_min is
+port (en, clock, reset_n : in std_logic;
+		F : out std_logic_vector;)
+end counter_mod_min;
+
+		
+architecture estructura of countermod_min is
+signal r_next, r_reg : unsigned(4 downto 0);
+begin 
+
+			process(reset_n, clock,en, r_next)
+			begin
+			
+				if reset_n='0' then
+				r_reg <= .
+				
+				
+				begin
+
+		process(reset_n,clock,en,ud)
+		begin
+		
+			if reset_n='0' then
+			uq<=to_unsigned(12,5);
+			elsif rising_edge(clock) then
+				if en='1' then
+				uq<=ud;
+				end if;
+			end if;
+		
+		end process;
+
+ud<=to_unsigned(12,5) when uq=0 else (uq-1);
+Q<=std_logic_vector(uq);
+end structural;

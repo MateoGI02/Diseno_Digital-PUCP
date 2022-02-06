@@ -1,0 +1,31 @@
+# do lab0_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/lab0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 18:19:06 on Sep 14,2020
+# vcom -reportprogress 300 -93 -work work G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/lab0.vhd 
+# -- Loading package STANDARD
+# init_dbinfo() DATABASE ERROR: (sqlite3_open G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vcom-9) Problem while writing token file "G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/simulation/modelsim/rtl_work/_temp/vcomkmitg5".
+# 
+# El sistema no puede encontrar la ruta especificada. (GetLastError() = 3)
+# ** Error: G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/lab0.vhd(16): VHDL Compiler exiting
+# End time: 18:19:06 on Sep 14,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/altera/15.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./lab0_run_msim_rtl_vhdl.do line 8
+# C:/altera/15.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {G:/PUCP/2020-2/Diseño_Digital/Lab/Lab_1/Lab0/lab0.vhd}"

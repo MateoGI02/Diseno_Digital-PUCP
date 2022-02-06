@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANDREA/Desktop/Lab3/EX1/simulation/modelsim
+Eadder
+Z1 w1601344485
+Z2 DPx4 work 14 my_subcircuits 0 22 ?YPA@>1E`W@bP4C@]eN:o0
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8../../adder.vhd
+Z6 F../../adder.vhd
+l0
+L5
+V_>AnWLUW;GaLYDhn8[d6B2
+!s100 7n^0f3M`[;G6LU3cK`^Ii0
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1601345276
+!i10b 1
+Z9 !s108 1601345275.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../adder.vhd|
+Z11 !s107 ../../adder.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Alogica2
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 _>AnWLUW;GaLYDhn8[d6B2
+l14
+L12
+V]Oig<fBCmA]`_^@WBIfJ`2
+!s100 bEY8W_G3_WlTIhbRHoUzE2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eaddsub
+Z14 w1601341478
+Z15 DPx4 work 11 my_circuits 0 22 Po738?Hg]`n[lEoi^@hgI1
+R3
+R4
+R0
+Z16 8../../addsub.vhd
+Z17 F../../addsub.vhd
+l0
+L5
+VgKL383S6kA6E`>55bKjB40
+!s100 iIbOR5S<l?gnZWPAS3]P81
+R7
+31
+R8
+!i10b 1
+Z18 !s108 1601345276.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|../../addsub.vhd|
+Z20 !s107 ../../addsub.vhd|
+!i113 1
+R12
+R13
+Alogica
+R15
+R3
+R4
+DEx4 work 6 addsub 0 22 gKL383S6kA6E`>55bKjB40
+l15
+L12
+V3XY[kJlZHbDTIz3mQ[6C?1
+!s100 RH7;jN43L9fDcWIP0TE[a1
+R7
+31
+R8
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Eaddsub_vhd_tst
+Z21 w1601341511
+R3
+R4
+R0
+Z22 8addsub.vht
+Z23 Faddsub.vht
+l0
+L31
+V3Q`S`S[c`O_`LZlNZ@5SV1
+!s100 [[enWC8:dm@YGgN?J:]JJ3
+R7
+31
+R8
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-93|-work|work|addsub.vht|
+Z25 !s107 addsub.vht|
+!i113 1
+R12
+R13
+Aaddsub_arch
+R3
+R4
+DEx4 work 14 addsub_vhd_tst 0 22 3Q`S`S[c`O_`LZlNZ@5SV1
+l54
+L33
+Va8>F[C3QLHN>YWiX]0IfB0
+!s100 CW>`zNdXgd94Z]D7767jI2
+R7
+31
+R8
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R12
+R13
+Efulladder
+Z26 w1601335958
+R3
+R4
+R0
+Z27 8../../fulladder.vhd
+Z28 F../../fulladder.vhd
+l0
+L4
+VR69I=bb>H=iKB4g6_gYgb2
+!s100 `f:XeVJJN7];6cZR?Qgf50
+R7
+31
+Z29 !s110 1601345275
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|../../fulladder.vhd|
+Z31 !s107 ../../fulladder.vhd|
+!i113 1
+R12
+R13
+Alogica1
+R3
+R4
+DEx4 work 9 fulladder 0 22 R69I=bb>H=iKB4g6_gYgb2
+l11
+L10
+V2[;oW1TR4DhCaEbk6Sb852
+!s100 YA0kJK99`_8Q3T^[ZEZl70
+R7
+31
+R29
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Pmy_circuits
+R3
+R4
+w1601339393
+R0
+8../../my_circuits.vhd
+F../../my_circuits.vhd
+l0
+L4
+VPo738?Hg]`n[lEoi^@hgI1
+!s100 oha]Le;CThDcdKFESmHn_2
+R7
+31
+R8
+!i10b 1
+R18
+!s90 -reportprogress|300|-93|-work|work|../../my_circuits.vhd|
+!s107 ../../my_circuits.vhd|
+!i113 1
+R12
+R13
+Pmy_subcircuits
+R3
+R4
+w1601332924
+R0
+8../../my_subcircuits.vhd
+F../../my_subcircuits.vhd
+l0
+L4
+V?YPA@>1E`W@bP4C@]eN:o0
+!s100 6G032Qc8[mK=R64>dSo3a2
+R7
+31
+R29
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|../../my_subcircuits.vhd|
+!s107 ../../my_subcircuits.vhd|
+!i113 1
+R12
+R13
